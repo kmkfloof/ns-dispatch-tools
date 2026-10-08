@@ -33,7 +33,7 @@ jobs:
         uses: nrwl/nx-set-shas@v5
 
       - name: Check formatting
-        run: npx nx record -- nx format:check
+        run: pnpm nx record -- nx format:check
 
       - name: Build, lint, type-check, run all tests on affected projects
         if: github.event_name == 'pull_request'

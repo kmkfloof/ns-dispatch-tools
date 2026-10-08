@@ -21,7 +21,7 @@ export interface HslColor {
  */
 export function hexToRgb(hex: string): RgbColor {
   if (!isValidHex(hex)) {
-    throw new Error('Invalid hex color.');
+    throw new Error('Invalid hex color');
   }
 
   // Remove # if present
